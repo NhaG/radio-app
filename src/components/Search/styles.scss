@@ -1,0 +1,42 @@
+.search {
+    max-width: 100%;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    margin-top: 5rem;
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-results {
+        font-weight: 700;
+    }
+
+
+    &-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 3px solid var(--lightbrown);
+    }
+
+    input {
+        font-size: 1rem;
+        border: none;
+        
+        background-color: var(--backgroud-color);
+        height: 2rem;
+        padding: .5rem;
+
+        color: var(--black);
+
+        &::placeholder {
+            color: inherit;
+        }
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+}

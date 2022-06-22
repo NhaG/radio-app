@@ -1,0 +1,40 @@
+header {
+  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+
+    background:  var(--brown);
+    color: var(--white);
+    z-index: 100;
+
+    .logo{
+        
+        a{
+            text-decoration: none;
+            color: var(--white);
+        
+
+        a:visited{
+            text-decoration: none;
+            color: var(--white);
+        }
+
+        transition: color 1s;
+        transition: 2;
+            &:hover{
+                color: var(--lightbrown);
+            }
+        }
+    }
+}

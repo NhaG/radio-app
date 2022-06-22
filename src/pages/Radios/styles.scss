@@ -1,0 +1,85 @@
+.radios-container {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.radios {
+
+    font-family: 'Open Sans', sans-serif;
+    min-height: calc(100vh - 8rem);
+
+    .card {
+        width: calc(100% / 6);
+        padding: 0rem 1.5rem;
+        @media (max-width: 577px) {
+            width: calc(100% / 2);
+        } 
+
+        &-image {
+            width: 100%;
+            padding-bottom: calc(100% - 1.5rem);
+            border-radius: 50%;
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            background-color: var(--lightbrown);
+
+            opacity: 30%;
+            border: .75rem solid var(--brown);
+
+            @media (max-width: 577px) {
+                border: .5rem solid var(--brown);
+            }
+
+            transition: opacity 1s;
+            transition:2;
+            &:hover {
+                opacity: 100%;
+
+            }
+
+        }
+
+        &-name {
+            padding-top: 2rem;
+
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+            @media (max-width: 577px) {
+                font-size: 20px;
+                padding-top: 1.5rem;
+            }
+            
+        }
+
+        &-country {
+            padding-top: 0.5rem;
+            text-align: center;
+        }
+
+        &-tags {
+            padding-bottom: 2rem;
+            text-align: center;
+            word-wrap: break-word;
+            @media (max-width: 577px) {
+                padding-bottom: 1.5rem;
+            }
+        }
+
+        &-circle {
+            aspect-ratio: 1/1;
+            width: 100%;
+            background-color: var(--lightbrown);
+            border-radius: 50%;
+            @media (max-width: 577px) {
+                aspect-ratio: 0/0;
+        
+            }
+
+        }
+    }
+
+}

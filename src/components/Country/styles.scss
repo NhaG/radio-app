@@ -1,0 +1,63 @@
+.card {
+    
+    font-family: 'Open Sans', sans-serif;
+    
+    a{
+        text-decoration: none;
+    }
+
+    &-station-name {
+        z-index: 1;
+        color: whitesmoke;
+        font-weight: 700;
+        padding-left: 0.5rem;
+        font-size: 1.5rem;
+        @media (max-width: 577px) {
+            font-size: 16px;
+        } 
+    }
+
+    &-station-radios {
+        z-index: 1;
+        color: var(--white);
+        font-weight: 700;
+        padding-left: 0.25rem;
+        font-size: 1.5rem;
+        padding-right: 0.5rem;
+        @media (max-width: 577px) {
+            font-size: 16px;
+        } 
+    }
+    
+
+    &-station-bar {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 3rem;
+        background-color: var(--lightbrown);
+        margin-bottom: 1.5rem;
+
+        @media (max-width: 577px) {
+            height: 3.5rem;
+        } 
+
+        &-content {
+            position: absolute;
+            height: 3rem;
+            background-color: var(--brown);
+
+            @media (max-width: 577px) {
+                height: 3.5rem;
+            } 
+
+        }
+        transition: background-color 1.5s;
+        transition:2;
+            &:hover{
+                background-color:  var(--brown);
+            }
+
+    }
+}
